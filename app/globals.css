@@ -7,13 +7,14 @@ body {
   background-color: #1c1c1e;
   font-family: "Space Grotesk", sans-serif;
   position: relative;
-  background-image: url("/images/Virtual X Kimp.png");
+  background-image: url("/images/Living World.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 input[type='number'] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
