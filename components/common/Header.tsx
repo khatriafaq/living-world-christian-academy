@@ -90,37 +90,37 @@ const Header = () => {
       </div>
 
       {/* Desktop Menu */}
-      
-        <div className="hidden lg:flex flex-auto space-x-4 items-center">
-          <nav className="m-0 w-[487px] flex flex-col items-start justify-end pt-0 px-0 pb-[22px] box-border max-w-full mq750:hidden">
-            <nav className="flex w-fit gap-14 mx-auto text-2xl font-bold py-4 text-white font-poppins text-center">
-              <div className="relative leading-[130%] inline-block min-w-[42px] z-[1]">
-                Home
-              </div>
-              <div className="relative leading-[130%] inline-block min-w-[52px] z-[1]">
-                Mission
-              </div>
-              <div className="relative leading-[130%] inline-block min-w-[42px] z-[1]">
-                Vision
-              </div>
-              <div className="relative leading-[130%] inline-block min-w-[74px] z-[1]">
-                Objectives
-              </div>
-              <div className="relative leading-[130%] inline-block min-w-[85px] whitespace-nowrap z-[1]">
-                White Paper
-              </div>
-            </nav>
+
+      <div className="hidden lg:flex flex-auto space-x-4 items-center">
+        <nav className="m-0 w-[487px] flex flex-col items-start justify-end pt-0 px-0 pb-[22px] box-border max-w-full mq750:hidden">
+          <nav className="flex w-fit gap-14 mx-auto text-2xl font-bold py-4 text-white font-poppins text-center">
+            <Link className="navbar__link relative" href="#about">
+              HOME
+            </Link>
+            <Link className="navbar__link relative" href="#mission">
+              Mission
+            </Link>
+            <Link className="navbar__link relative" href="#vision">
+              Vision
+            </Link>
+            <Link className="navbar__link relative" href="#objective">
+              Objectives
+            </Link>
+            <Link className="navbar__link relative" href="#">
+              Whitepaper
+            </Link>
           </nav>
-          <div className="flex flex-auto items-start justify-end pt-0 px-0 pb-2.5">
-            <button className="cursor-pointer py-1 px-[21px] bg-[transparent] shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-full [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-skyblue-200 hover:bg-skyblue-400 hover:box-border hover:border-[1px] hover:border-solid hover:border-skyblue-300">
-              <div className="h-[41px] w-[120px] relative shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-xl [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] box-border hidden border-[1px] border-solid border-skyblue-200" />
-              <div className="relative text-lg font-bold font-poppins text-white text-centre inline-block min-w-[78px] whitespace-nowrap z-[1] px-5 py-2">
-                Contact
-              </div>
-            </button>
-          </div>
-          <div className="self-stretch h-px relative box-border z-[1] border-t-[1px] border-solid border-white" />
+        </nav>
+        <div className="flex flex-auto items-start justify-end pt-0 px-0 pb-2.5">
+          <button className="cursor-pointer py-1 px-[21px] bg-[transparent] shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-full [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-skyblue-200 hover:bg-skyblue-400 hover:box-border hover:border-[1px] hover:border-solid hover:border-skyblue-300">
+            <div className="h-[41px] w-[120px] relative shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-xl [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] box-border hidden border-[1px] border-solid border-skyblue-200" />
+            <div className="relative text-lg font-bold font-poppins text-white text-centre inline-block min-w-[78px] whitespace-nowrap z-[1] px-5 py-2">
+              Contact
+            </div>
+          </button>
         </div>
+        <div className="self-stretch h-px relative box-border z-[1] border-t-[1px] border-solid border-white" />
+      </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
@@ -128,21 +128,21 @@ const Header = () => {
           className={`w-full pt-6 pb-4 lg:hidden absolute left-0 -bottom-48  bg-dark transition-all rounded-[42px] fade-right font-poppins`}
         >
           <div className="flex flex-col mx-auto gap-3 w-[200px] text-white">
-            <div className="relative leading-[130%] inline-block min-w-[42px] z-[1]">
-              Home
-            </div>
-            <div className="relative leading-[130%] inline-block min-w-[52px] z-[1]">
+            <Link className="navbar__link relative" href="#about">
+              HOME
+            </Link>
+            <Link className="navbar__link relative" href="#mission">
               Mission
-            </div>
-            <div className="relative leading-[130%] inline-block min-w-[42px] z-[1]">
+            </Link>
+            <Link className="navbar__link relative" href="#vision">
               Vision
-            </div>
-            <div className="relative leading-[130%] inline-block min-w-[74px] z-[1]">
+            </Link>
+            <Link className="navbar__link relative" href="#objective">
               Objectives
-            </div>
-            <div className="relative leading-[130%] inline-block min-w-[85px] whitespace-nowrap z-[1]">
-              White Paper
-            </div>
+            </Link>
+            <Link className="navbar__link relative" href="#">
+              Whitepaper
+            </Link>
           </div>
         </div>
       )}

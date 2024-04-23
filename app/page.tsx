@@ -79,11 +79,13 @@ export default function Home() {
           {/* <button className="font-SourceSans3 bg-brandColor mt-8 text-2xl px-8 font-bold leading-150 hover:bg-transparent border border-brandColor hover:text-brandColor text-white py-4 rounded-2xl">Buy PreSale</button> */}
         </div>
       </section>
-      <AboutUsSection />
+      {/* <AboutUsSection />
       <Staking />
       <RoadMapSection />
       <TeamSection />
-      <Faqs faqs={FaqsData} />)
+      <Faqs faqs={FaqsData} /> */}
+      
+      )
       
     </main>
   );
