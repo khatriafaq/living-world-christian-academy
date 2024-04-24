@@ -41,7 +41,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="main-container flex justify-between items-center mt-5 py-[13px] px-[28px] relative z-20 max-w-full">
+    <header className="main-container flex justify-between items-center mt-5 py-[13px] px-[28px] relative z-20 max-w-full border-b-4">
       {/* logo */}
       <div className="logo flex-auto">
         <Link href="/#">
@@ -93,7 +93,7 @@ const Header = () => {
 
       <div className="hidden lg:flex flex-auto space-x-4 items-center">
         <nav className="m-0 w-[487px] flex flex-col items-start justify-end pt-0 px-0 pb-[22px] box-border max-w-full mq750:hidden">
-          <nav className="flex w-fit gap-14 mx-auto text-2xl font-bold py-4 text-white font-poppins text-center">
+          <nav className="flex w-fit gap-14 mx-auto text-xl py-4 text-white font-poppins text-center">
             <Link className="navbar__link relative" href="#about">
               HOME
             </Link>
@@ -112,14 +112,13 @@ const Header = () => {
           </nav>
         </nav>
         <div className="flex flex-auto items-start justify-end pt-0 px-0 pb-2.5">
-          <button className="cursor-pointer py-1 px-[21px] bg-[transparent] shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-full [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-skyblue-200 hover:bg-skyblue-400 hover:box-border hover:border-[1px] hover:border-solid hover:border-skyblue-300">
+          <button className="cursor-pointer py-1 px-[21px] bg-[transparent] shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-full [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-sky-200 hover:bg-sky-700 hover:border-sky-300 hover:box-border hover:border-[1px] hover:border-solid hover:py-2">
             <div className="h-[41px] w-[120px] relative shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-xl [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] box-border hidden border-[1px] border-solid border-skyblue-200" />
             <div className="relative text-lg font-bold font-poppins text-white text-centre inline-block min-w-[78px] whitespace-nowrap z-[1] px-5 py-2">
               Contact
             </div>
           </button>
         </div>
-        <div className="self-stretch h-px relative box-border z-[1] border-t-[1px] border-solid border-white" />
       </div>
 
       {/* Mobile Menu */}

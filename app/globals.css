@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -451,9 +456,9 @@ h3 {
 }
 
 @layer components {
-  .main-container {
+  /* .main-container {
     @apply max-w-[1650px] mx-[3%] lg:mx-[5%] xxl:mx-auto mb-14;
-  }
+  } */
 
   .clock-list {
     @apply flex flex-col basis-0 flex-1 max-w-full relative w-full px-4;

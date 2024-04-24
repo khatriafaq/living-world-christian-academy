@@ -32,6 +32,11 @@ const config: Config = {
       fontFamily: {
         blackops: ['var(--font-blackops)'],
         SourceSans3: ['var(--font-source-sans-3)'],
+        mulish: "Mulish",
+        ubuntu: "Ubuntu",
+        inter: "Inter",
+        poppins: "Poppins",
+        inherit: "inherit",
       },
       colors: {
         brandColor: '#215FFF',
