@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../public/VirtualXLogo-1.svg";
+import Logo from "../../public/images/LivingWordLogo.svg";
 import Link from "next/link";
 import Telegram from "../../public/telegram.svg";
 import FB from "../../public/Facebook.svg";
@@ -31,53 +31,55 @@ const Footer = () => {
 
   const Company = [
     {
-      name: "About",
-      link: "/#about",
+      name: "Home",
+      link: "/#home",
     },
     {
-      name: "Team",
-      link: "/#team",
+      name: "Vision",
+      link: "/#vision",
     },
     {
-      name: "Features",
-      link: "/#",
+      name: "Mission",
+      link: "/#mission",
     },
     {
-      name: "Road map",
-      link: "/#roadmap",
+      name: "Objective",
+      link: "/#objective",
     },
   ];
 
   const Home = [
     {
       name: "Terms & Conditions",
-      link: "/terms",
+      link: "/#",
     },
     {
       name: "Privacy Policy",
-      link: "/privacy",
+      link: "/#",
     },
     {
       name: "FAQ",
-      link: "/#faq",
+      link: "/#",
     },
   ];
 
   return (
-    <div className="bg-black py-16 lg:px-52 md:px-8 px-8 flex justify-center flex-col ">
+    <div className="py-16 lg:px-52 md:px-8 px-8 flex justify-center flex-col ">
       <div className="flex justify-center md:justify-between text-white flex-col md:flex-row">
-        <div className="py-4">
+        <div className="py-4 ">
+          <div className="">
           <Image
             src={Logo}
             alt="logo"
-            className="mb-5"
+            className="mb-5 "
             width={197.26}
             height={60.67}
-          />
-          <p className="font-normal text-dark2">
-            The future of Mobile is here
-            <br /> powered by cryptocurrencies &
-            <br /> blockchain technology
+            />
+            </div>
+          <p className="font-normal text-white">
+          Empowering Every Student for  
+            <br /> Success in a Dynamic World
+            <br /> with Faith and Purpose.
           </p>
           <div className="flex mt-[48px] grayscale">
             {SocialLink.map((data, index) => (
@@ -93,11 +95,11 @@ const Footer = () => {
         </div>
 
         <div className="py-5">
-          <div className="text-brandColor uppercase my-3">Company</div>
+          <div className="text-skyblue-300 uppercase my-3">Company</div>
           <div className="flex flex-col items-start">
             {Company.map((data, index) => (
               <div key={index}>
-                <div className="text-dark2 my-3">
+                <div className="text-white my-3">
                   <a
                     href={data.link}
                     className="hover:text-white active:text-brandColor transition-all"
@@ -111,11 +113,11 @@ const Footer = () => {
         </div>
 
         <div className="py-5">
-          <div className="text-brandColor uppercase my-3">Resources</div>
+          <div className=" text-skyblue-300 uppercase my-3">Resources</div>
           <div className="flex flex-col items-start">
             {Home.map((data, index) => (
               <div key={index}>
-                <div className="text-dark2 my-3">
+                <div className="text-white my-3">
                   <Link
                     href={data.link}
                     className="hover:text-white active:text-brandColor transition-all"
@@ -133,7 +135,7 @@ const Footer = () => {
       </div>
       <div className="text-dark2 flex justify-center text-center">
         &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
-        VIRTUALX
+        LIVING WORD CHRISTIAN ACADEMY
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "../../public/images/VirtualXLogo-1- 1.svg";
+import Logo from "../../public/images/LivingWordLogo.svg";
 import PrimaryBtn from "../ui/PrimaryBtn";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Data from "./config.json";
@@ -41,7 +41,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="main-container flex justify-between items-center mt-5 py-[13px] px-[28px] relative z-20 max-w-full border-b-4">
+    <header className="main-container flex justify-between items-center mt-5 py-[13px] px-[28px] relative z-20 max-w-full border-b-4 border-white">
       {/* logo */}
       <div className="logo flex-auto">
         <Link href="/#">
@@ -91,17 +91,17 @@ const Header = () => {
 
       {/* Desktop Menu */}
 
-      <div className="hidden lg:flex flex-auto space-x-4 items-center">
+      <div className="hidden lg:flex flex-auto space-x-4 items-center" id="home">
         <nav className="m-0 w-[487px] flex flex-col items-start justify-end pt-0 px-0 pb-[22px] box-border max-w-full mq750:hidden">
           <nav className="flex w-fit gap-14 mx-auto text-xl py-4 text-white font-poppins text-center">
-            <Link className="navbar__link relative" href="#about">
+            <Link className="navbar__link relative" href="#home">
               HOME
-            </Link>
-            <Link className="navbar__link relative" href="#mission">
-              Mission
             </Link>
             <Link className="navbar__link relative" href="#vision">
               Vision
+            </Link>
+            <Link className="navbar__link relative" href="#mission">
+              Mission
             </Link>
             <Link className="navbar__link relative" href="#objective">
               Objectives
