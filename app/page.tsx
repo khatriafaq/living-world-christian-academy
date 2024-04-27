@@ -2,13 +2,14 @@ import Image from "next/image";
 import Phone from "../public/Phone.svg";
 import PhoneDisply from "../public/PhoneDisply.svg";
 import TeamSection from "@/components/TeamSection";
-import AboutUsSection from "@/components/AboutUsSection";
+import AboutUsSection from "@/components/Vision";
 import Mission from "@/components/Mission"
 import Faqs from "@/components/Faqs/Faqs";
 import { FaqsData } from "@/components/Faqs/FaqsData";
 import RoadMapSection from "@/components/RoadMapSection";
 import { useState } from "react";
 import Staking from "@/components/stake";
+import Vision from "@/components/Vision";
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <AboutUsSection />
+      <Vision />
       <Mission />
       {/* <Staking /> */}
       {/* <RoadMapSection /> */}
