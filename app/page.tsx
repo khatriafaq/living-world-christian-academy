@@ -32,7 +32,7 @@ export default function Home() {
 
           <div className="relative text-lg inline-block max-w-full z-[4] font-poppins">
             <p className="m-0">
-              We envisage a future where every student, regardless of
+              We envision a future where every student, regardless of
             </p>
             <p className="m-0">
               background, is equipped with the knowledge, skills, and

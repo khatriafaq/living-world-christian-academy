@@ -4,9 +4,9 @@ import Vision from "../public/Vision.svg";
 
 const AboutUsSection = () => {
   return (
-    <main className="overflow-x-hidden md:mt-10">
+    <main className="overflow-x-hidden md:mt-10 ">
       {" "}
-      <section className="main-container mb-0 xl:flex xxl:items-start justify-start text-white">
+      <section className="main-container mb-0 xl:flex xxl:items-start justify-start text-white"id="vision">
         {/* hero text container */}
         <div className="flex flex-col p-5 justify-center lg:pt-20">
           <div className="flex mb-10">
@@ -30,7 +30,7 @@ const AboutUsSection = () => {
           </div>
         </div>
         <div className="flex md:ml-[200px]">
-          <div className="w-full justify-start xl:flex relative z-10">
+          <div className="w-full xl:flex relative z-10 lg:pl-12">
             <Image
               src={Vision}
               alt="Vision"
