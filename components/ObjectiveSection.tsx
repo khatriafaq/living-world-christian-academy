@@ -22,7 +22,7 @@ const ObjectiveSection = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 rounded-2xl sm:grid-cols-2 lg:grid-cols-3 font-poppins bg-gradient-to-tl from-bg1/0 to-bg1/40 p-[50px]">
+          <div className="grid grid-cols-1 gap-8 rounded-2xl sm:grid-cols-2 lg:grid-cols-3 font-poppins bg-gradient-to-tl from-bg1/0 to-bg1/40 p-[20px] md:p-[50px]">
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2 justify-between align-top">
