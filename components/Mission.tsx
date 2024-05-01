@@ -7,7 +7,7 @@ const AboutUsSection = () => {
     <main className="overflow-x-hidden pt-2 md:mt-10">
       {" "}
       <section
-        className="main-container mb-0 xl:flex xxl:items-start justify-start text-white "
+        className="main-container mb-0 xl:flex xxl:items-start justify-start text-white"
         id="mission"
       >
         {/* hero text container */}

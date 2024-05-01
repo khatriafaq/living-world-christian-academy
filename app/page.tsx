@@ -10,6 +10,7 @@ import RoadMapSection from "@/components/RoadMapSection";
 import { useState } from "react";
 import Staking from "@/components/stake";
 import Vision from "@/components/Vision";
+import ObjectiveSection from "@/components/ObjectiveSection";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
       </section>
       <Vision />
       <Mission />
+     <ObjectiveSection/>
       {/* <Staking /> */}
       {/* <RoadMapSection /> */}
       {/* <TeamSection /> */}

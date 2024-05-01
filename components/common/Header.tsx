@@ -91,9 +91,12 @@ const Header = () => {
 
       {/* Desktop Menu */}
 
-      <div className="hidden lg:flex flex-auto space-x-4 items-center" id="home">
+      <div
+        className="hidden lg:flex flex-auto space-x-4 items-center"
+        id="home"
+      >
         <nav className="m-0 w-[487px] flex flex-col items-start justify-end pt-0 px-0 pb-[22px] box-border max-w-full mq750:hidden">
-          <nav className="flex w-fit gap-14 mx-auto text-xl py-4 text-white font-poppins text-center">
+          <nav className="flex w-fit gap-14 mx-auto text-lg py-4 text-white font-poppins text-center">
             <Link className="navbar__link relative" href="#home">
               HOME
             </Link>

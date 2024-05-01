@@ -43,6 +43,7 @@ const config: Config = {
         lightPink: '#FF9EEA',
         dark: '#1C1C1E',
         dark2: '#8A8A8E',
+        bg1: '#B4F0FF',
         light: '#F2F2F7',
         light2: '#FFFFFF',
         gray: {
