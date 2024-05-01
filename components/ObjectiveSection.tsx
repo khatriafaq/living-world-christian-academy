@@ -25,13 +25,12 @@ const ObjectiveSection = () => {
           <div className="grid grid-cols-1 gap-8 rounded-2xl sm:grid-cols-2 lg:grid-cols-3 font-poppins bg-gradient-to-tl from-bg1/0 to-bg1/40 p-[50px]">
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
-                <div className="flex gap-2">
-                  <p className="pt-2 text-3xl text-cyan-300">1.</p>
-                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
-                    Delivering Educational Excellence.
+                <div className="flex gap-2 justify-between align-top">
+                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                    1. Delivering Educational Excellence.
                   </p>
                 </div>
-                <h3 className="text-2xl leading-10 text-white font-medium">
+                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
                   Empowering students with essential skills and knowledge for
                   lifelong success.
                 </h3>
@@ -41,12 +40,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
-                  <p className="pt-2 text-3xl text-cyan-300">2.</p>
-                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
-                    Expanding the Christian sphere of influence.
+                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                    2. Expanding the Christian sphere of influence.
                   </p>
                 </div>
-                <h3 className="text-2xl leading-10 text-white font-medium">
+                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
                   Growing Christian reach through cultural and societal
                   influence worldwide expansion.
                 </h3>
@@ -56,12 +54,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
-                  <p className="pt-2 text-3xl text-cyan-300">3.</p>
-                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
-                    Aligning students with Biblical Teachings.
+                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                    3. Aligning students with Biblical Teachings.
                   </p>
                 </div>
-                <h3 className="text-2xl leading-10 text-white font-medium">
+                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
                   Aligning student and family values with the moral compass of
                   biblical teachings.
                 </h3>
@@ -71,12 +68,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
-                  <p className="pt-2 text-3xl text-cyan-300">4.</p>
-                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
-                    Fostering life-building growth.
+                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                    4. Fostering life-building growth.
                   </p>
                 </div>
-                <h3 className="text-2xl leading-10 text-white font-medium">
+                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
                   Providing opportunities for life-building growth.
                 </h3>
               </div>
@@ -85,12 +81,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
-                  <p className="pt-2 text-3xl text-cyan-300">5.</p>
-                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
-                    Enhancing graduating citizen's quality.
+                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                    5. Enhancing graduating citizen's quality.
                   </p>
                 </div>
-                <h3 className="text-2xl leading-10 text-white font-medium">
+                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
                   Improving graduating citizen’s quality for enhanced
                   contributions.
                 </h3>
@@ -100,12 +95,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
-                  <p className="pt-2 text-3xl text-cyan-300">6.</p>
-                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
-                    Strengthening the country's Fabric.
+                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                    6. Strengthening the country's Fabric.
                   </p>
                 </div>
-                <h3 className="text-2xl leading-10 text-white font-medium">
+                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
                   Bolstering the county's social fabric for collective
                   resilience.
                 </h3>
