@@ -22,12 +22,12 @@ const ObjectiveSection = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 rounded-2xl sm:grid-cols-2 lg:grid-cols-3 font-poppins bg-gradient-to-t from-bg1/50 to-bg1/10 p-[50px]">
-            <div className="rounded-3xl bg-gradient-to-b from-bg1/50 to-bg1/10 p-2 dark:from-gray-800">
-              <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10">
+          <div className="grid grid-cols-1 gap-8 rounded-2xl sm:grid-cols-2 lg:grid-cols-3 font-poppins bg-gradient-to-tl from-bg1/0 to-bg1/40 p-[50px]">
+            <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
+              <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
                   <p className="pt-2 text-3xl text-cyan-300">1.</p>
-                  <p className="text-4xl leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
                     Delivering Educational Excellence.
                   </p>
                 </div>
@@ -38,11 +38,11 @@ const ObjectiveSection = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl bg-gradient-to-b from-bg1/50 to-bg1/10 p-2 dark:from-gray-800">
-              <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10">
+            <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
+              <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
                   <p className="pt-2 text-3xl text-cyan-300">2.</p>
-                  <p className="text-4xl leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
                     Expanding the Christian sphere of influence.
                   </p>
                 </div>
@@ -53,11 +53,11 @@ const ObjectiveSection = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl bg-gradient-to-b from-bg1/50 to-bg1/10 p-2 dark:from-gray-800">
-              <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10">
+            <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
+              <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
                   <p className="pt-2 text-3xl text-cyan-300">3.</p>
-                  <p className="text-4xl leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
                     Aligning students with Biblical Teachings.
                   </p>
                 </div>
@@ -68,11 +68,11 @@ const ObjectiveSection = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl bg-gradient-to-b from-bg1/50 to-bg1/10 p-2 dark:from-gray-800">
+            <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
                   <p className="pt-2 text-3xl text-cyan-300">4.</p>
-                  <p className="text-4xl leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
                     Fostering life-building growth.
                   </p>
                 </div>
@@ -82,11 +82,11 @@ const ObjectiveSection = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl bg-gradient-to-b from-bg1/50 to-bg1/10 p-2 dark:from-gray-800">
+            <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
                   <p className="pt-2 text-3xl text-cyan-300">5.</p>
-                  <p className="text-4xl leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
                     Enhancing graduating citizen's quality.
                   </p>
                 </div>
@@ -97,11 +97,11 @@ const ObjectiveSection = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl bg-gradient-to-b from-bg1/50 to-bg1/10 p-2 dark:from-gray-800">
+            <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
                   <p className="pt-2 text-3xl text-cyan-300">6.</p>
-                  <p className="text-4xl leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[32px] leading-[52px] pb-6 text-cyan-300">
                     Strengthening the country's Fabric.
                   </p>
                 </div>
