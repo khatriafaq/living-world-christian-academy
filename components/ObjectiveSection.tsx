@@ -26,11 +26,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2 justify-between align-top">
-                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[16px] leading-[32px] md:text-[16px] md:leading-[32px] xl:text-[30px] xl:leading-[52px] pb-6 text-cyan-300">
                     1. Delivering Educational Excellence.
                   </p>
                 </div>
-                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
+                <h3 className="text-[16px] xl:text-2xl leading-8 text-white font-normal">
                   Empowering students with essential skills and knowledge for
                   lifelong success.
                 </h3>
@@ -40,11 +40,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
-                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[16px] leading-[32px] md:text-[16px] md:leading-[32px] xl:text-[30px] xl:leading-[52px] pb-6 text-cyan-300">
                     2. Expanding the Christian sphere of influence.
                   </p>
                 </div>
-                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
+                <h3 className="text-[16px] xl:text-2xl leading-8 text-white font-normal">
                   Growing Christian reach through cultural and societal
                   influence worldwide expansion.
                 </h3>
@@ -54,11 +54,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10 h-[380px]">
                 <div className="flex gap-2">
-                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[16px] leading-[32px] md:text-[16px] md:leading-[32px] xl:text-[30px] xl:leading-[52px] pb-6 text-cyan-300">
                     3. Aligning students with Biblical Teachings.
                   </p>
                 </div>
-                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
+                <h3 className="text-[16px] xl:text-2xl leading-8 text-white font-normal">
                   Aligning student and family values with the moral compass of
                   biblical teachings.
                 </h3>
@@ -68,11 +68,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
-                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[16px] leading-[32px] md:text-[16px] md:leading-[32px] xl:text-[30px] xl:leading-[52px] pb-6 text-cyan-300">
                     4. Fostering life-building growth.
                   </p>
                 </div>
-                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
+                <h3 className="text-[16px] xl:text-2xl leading-8 text-white font-normal">
                   Providing opportunities for life-building growth.
                 </h3>
               </div>
@@ -81,11 +81,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
-                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[16px] leading-[32px] md:text-[16px] md:leading-[32px] xl:text-[30px] xl:leading-[52px] pb-6 text-cyan-300">
                     5. Enhancing graduating citizen's quality.
                   </p>
                 </div>
-                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
+                <h3 className="text-[16px] xl:text-2xl leading-8 text-white font-normal">
                   Improving graduating citizen’s quality for enhanced
                   contributions.
                 </h3>
@@ -95,11 +95,11 @@ const ObjectiveSection = () => {
             <div className="rounded-3xl bg-gradient-to-b from-bg1/0 to-bg1/10 p-2 dark:from-gray-800">
               <div className="rounded-[calc(1.5rem-1px)] bg-bg1/10 p-10  h-[380px]">
                 <div className="flex gap-2">
-                  <p className="text-[20px] leading-[32px] lg:text-[30px] lg:leading-[52px] pb-6 text-cyan-300">
+                  <p className="text-[16px] leading-[32px] md:text-[16px] md:leading-[32px] xl:text-[30px] xl:leading-[52px] pb-6 text-cyan-300">
                     6. Strengthening the country's Fabric.
                   </p>
                 </div>
-                <h3 className="text-[20px] lg:text-2xl leading-9 text-white font-normal">
+                <h3 className="text-[16px] xl:text-2xl leading-8 text-white font-normal">
                   Bolstering the county's social fabric for collective
                   resilience.
                 </h3>
