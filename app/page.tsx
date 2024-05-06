@@ -3,7 +3,7 @@ import Phone from "../public/Phone.svg";
 import PhoneDisply from "../public/PhoneDisply.svg";
 import TeamSection from "@/components/TeamSection";
 import AboutUsSection from "@/components/Vision";
-import Mission from "@/components/Mission"
+import Mission from "@/components/Mission";
 import Faqs from "@/components/Faqs/Faqs";
 import { FaqsData } from "@/components/Faqs/FaqsData";
 import RoadMapSection from "@/components/RoadMapSection";
@@ -11,11 +11,12 @@ import { useState } from "react";
 import Staking from "@/components/stake";
 import Vision from "@/components/Vision";
 import ObjectiveSection from "@/components/ObjectiveSection";
+import Sliders from "@/components/Sliders";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
-      ({" "}
+      {" "}
       <section className="main-container mb-0 xl:flex xxl:items-start justify-start text-white">
         {/* hero text container */}
 
@@ -69,11 +70,12 @@ export default function Home() {
       </section>
       <Vision />
       <Mission />
-     <ObjectiveSection/>
+      <Sliders />
+      <ObjectiveSection />
       {/* <Staking /> */}
       {/* <RoadMapSection /> */}
       {/* <TeamSection /> */}
-      {/* <Faqs faqs={FaqsData} /> */})
+      <Faqs faqs={FaqsData} />
     </main>
   );
 }

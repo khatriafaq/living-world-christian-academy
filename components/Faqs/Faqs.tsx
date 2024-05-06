@@ -22,9 +22,9 @@ const Faqs = ({ faqs }: FaqsProps) => {
   };
 
   return (
-    <section className="main-container md:grid grid-cols-2 md:mt-40" id="faq">
+    <section className="main-container md:grid grid-cols-2 md:mt-40 font-poppins" id="faq">
       <div className="" data-aos="fade-up">
-        <h2 className="lg:text-6xl text-4xl font-bold mb-4 text-white">FAQS</h2>
+        <h2 className="lg:text-6xl text-4xl font-bold font-poppins mb-4 text-cyan-400 ">FAQS</h2>
         {faqs?.map((faq, i) => (
           <SingleFaq
             key={i}

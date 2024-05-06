@@ -4,7 +4,7 @@ import Mission from "../public/Mission.svg";
 
 const AboutUsSection = () => {
   return (
-    <main className="overflow-x-hidden pt-2 md:mt-10">
+    <main className="overflow-x-hidden pt-2 md:mt-10 pb-8">
       {" "}
       <section
         className="main-container mb-0 xl:flex xxl:items-start justify-start text-white"
