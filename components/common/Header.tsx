@@ -118,7 +118,9 @@ const Header = () => {
           <button className="cursor-pointer py-1 px-[21px] bg-[transparent] shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-full [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] flex flex-row items-start justify-start z-[1] border-[1px] border-solid border-sky-200 hover:bg-sky-700 hover:border-sky-300 hover:box-border hover:border-[1px] hover:border-solid hover:py-2">
             <div className="h-[41px] w-[120px] relative shadow-[0px_2px_4px_rgba(154,_226,_255,_0.3)] rounded-xl [background:linear-gradient(180deg,_#9ae2ff,_rgba(154,_226,_255,_0))] box-border hidden border-[1px] border-solid border-skyblue-200" />
             <div className="relative text-lg font-bold font-poppins text-white text-centre inline-block min-w-[78px] whitespace-nowrap z-[1] px-5 py-2">
+            <Link className="relative" href="#contact">
               Contact
+            </Link>
             </div>
           </button>
         </div>
