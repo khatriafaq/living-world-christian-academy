@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import SingleFaq from "./SingleFaq";
-import faqimg from "../../public/FAQ.svg";
+import faqimg from "../../public/FAQ.png";
 import Image from "next/image";
 
 interface Faq {

@@ -12,6 +12,7 @@ import Staking from "@/components/stake";
 import Vision from "@/components/Vision";
 import ObjectiveSection from "@/components/ObjectiveSection";
 import Sliders from "@/components/Sliders";
+import WhatsApp from "@/components/WhatsApp";
 
 export default function Home() {
   return (
@@ -72,6 +73,7 @@ export default function Home() {
       <Mission />
       <Sliders />
       <ObjectiveSection />
+      <WhatsApp/>
       {/* <Staking /> */}
       {/* <RoadMapSection /> */}
       {/* <TeamSection /> */}

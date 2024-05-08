@@ -1,68 +1,39 @@
 export const FaqsData = [
   {
     queNo: 1,
-    question: "How does Living Word Christian Academy integrate spirituality into the curriculum?",
+    question:
+      "How does Living Word Christian Academy (LWCA) plan to use the proceeds from NFT minting for fundraising purposes?",
     answer:
-      "Spirituality is woven into all aspects of our curriculum, from daily devotionals to Bible classes integrated into various subjects. We aim to instill biblical values and encourage spiritual growth in every student.",
+      "All proceeds, minus $12,000 development and administrative fee, will be used to deposit into a trading bot service. This deposit will be used to create an endowment offering annual payout to be split between the school and NFT holders.",
   },
   {
     queNo: 2,
-    question: "What steps does Living Word Christian Academy take to nurture curiosity among students?",
+    question: "Will other investments be made?",
     answer:
-      "We foster curiosity through hands-on learning experiences, inquiry-based teaching methods, and extracurricular activities that encourage exploration and critical thinking.",
+      "LWCA looks forward to being able to use this NFT program annually to raise funds. Over time there are plans to evolve it into other fundraisers like art projects for students. The funds from these future NFT runs can be added to the existing endowment or used to make new investments at the discretion of the LWCA Board.",
   },
   {
     queNo: 3,
-    question: "How does Living Word Christian Academy promote community engagement?",
-    answer: 
-      "We actively involve students, parents, and staff in community service projects, outreach programs, and collaborative initiatives that make a positive impact in Dorchester County and beyond.",
+    question: "How can an NFT be purchased?",
+    answer:
+      "a. NFT’s are bought from the minting site by i) Connecting your wallet to the mint site  ii) Selecting the number of NFT’s you would like to buy iii) Press the mint button iv) Approve your transaction.",
   },
   {
     queNo: 4,
-    question: "What does Living Word Christian Academy do to develop leadership skills in students?",
+    question: "What is the currency used for buying a LWCA Endowment NFT",
     answer:
-      "Through mentorship programs, student government opportunities, and leadership workshops, we empower students to lead with integrity, compassion, and a servant's heart.",
+      "$25 USDT-Polygon/Matic. Please make sure you must hold a small amount of Matic to cover network gas fee, as well as the amount of USDT needed.",
   },
   {
     queNo: 5,
-    question: "How does Living Word Christian Academy ensure inclusivity and accessibility for all students?",
+    question: "Future uses of the endowment?",
     answer:
-      "We provide resources, support services, and accommodations to meet the diverse needs of our student body, fostering an environment where every individual feels valued and respected.",
+      " The endowment will grow exponentially over time and can be used to improve so many things i) Tuition programs, ii) Student and family services, iii) Guest speakers, iv) Graduation, v) College scholarships, vi) External endowment programs, vii) Etc.",
   },
   {
     queNo: 6,
-    question: "What role do biblical values play in the educational experience at Living Word Christian Academy?",
+    question: "How many NFT’s are available?",
     answer:
-      "Biblical values serve as the foundation of our school culture, guiding interactions, decision-making, and character development to nurture students' spiritual, moral, and ethical growth.",
-  },
-  {
-    queNo: 7,
-    question: "What technology underpins the VRL Virtual X token?",
-    answer:
-      "Our innovative practices include personalized learning approaches, technology integration, project-based learning initiatives, and partnerships with local businesses and organizations to enhance real-world learning experiences.",
-  },
-  {
-    queNo: 8,
-    question: "Can I trade VRL Virtual X token?",
-    answer:
-      "Yes, users have the flexibility to trade their VRL Virtual X tokens on various crypto exchanges, turning their rewards into a financial asset. ",
-  },
-  {
-    queNo: 9,
-    question: "Can you provide examples of innovative educational practices at Living Word Christian Academy?",
-    answer:
-      "While specific details are yet to be disclosed, Virtual X plans to introduce a range of innovative features, including potential AI integrations, loyalty programs, financial services, and more, to enhance the user experience. ",
-  },
-  {
-    queNo: 10,
-    question: "How does Living Word Christian Academy support students' social and emotional development?",
-    answer:
-      "We offer counseling services, peer support groups, and character education programs to promote empathy, resilience, and healthy relationships among students, fostering a positive school climate.",
-  },
-  {
-    queNo: 11,
-    question: "How does Living Word Christian Academy plan to use the proceeds from NFT minting for fundraising purposes?",
-    answer:
-      "The proceeds from NFT minting will support various initiatives such as scholarship programs, facility improvements, curriculum enhancements, and community outreach projects aligned with our school's mission and vision.",
+      "Total 12,000 NFT’s are available i) 2,000 will be held by the endowment program to be used to pay for administrative needs and tuition discounts ii. 10,000 will be sold to create the funding for the endowment program",
   },
 ];
