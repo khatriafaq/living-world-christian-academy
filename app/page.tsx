@@ -32,6 +32,7 @@ export default function Home() {
               <p className="m-0">Dorchester County</p>
             </h2>
           </div>
+        </div>
 
           <div className="relative text-lg inline-block max-w-full z-[4] font-poppins">
             <p className="m-0">
@@ -55,6 +56,36 @@ export default function Home() {
                   mint
                 </b>
               </button>
+                     {/* Input field and button added below */}
+                     <div>
+                  <div className="mt-4 grid w-full items-center gap-1.5">
+                    <div className="border-[3px] border-lightPink rounded-3xl bg-darkBrandColor p-4 w-full">
+                      <label
+                        htmlFor="startStaking"
+                        className="block text-lg sm:text-xl font-bold text-lightPink"
+                      >
+                        Start Staking
+                      </label>
+                      <div className="flex flex-col sm:flex-row items-center w-full mt-2 gap-2">
+                        <div className="flex flex-row w-full items-center justify-center">
+                          <label
+                            htmlFor="stakeAmount"
+                            className="text-lightPink font-bold flex items-center justify-center py-1"
+                          >
+                            Amount:
+                          </label>
+                          <input
+                            id="stakeAmount"
+                            type="number"
+                            placeholder="Enter Amount..."
+                            className="font-SourceSans3 bg-brandColor border-[3px] border-brandColor text-white rounded-3xl px-4 py-2 flex-grow hover:bg-dark active:border-b-[3px] active:border-lightPink"
+                          />
+                        </div>
+
+                        
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
