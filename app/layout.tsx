@@ -11,6 +11,7 @@ import {
   ConnectButton,
   getDefaultConfig,
   RainbowKitProvider,
+  Theme,
 } from "@rainbow-me/rainbowkit";
 import { WagmiProvider, useAccount } from "wagmi";
 import {
@@ -67,8 +68,63 @@ export default function RootLayout({
       >
         <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
-            <RainbowKitProvider>
-              
+            <RainbowKitProvider
+              theme={{
+                blurs: {
+                  modalOverlay: "...",
+                },
+                colors: {
+                  accentColor: "...",
+                  accentColorForeground: "...",
+                  actionButtonBorder: "...",
+                  actionButtonBorderMobile: "...",
+                  actionButtonSecondaryBackground: "...",
+                  closeButton: "...",
+                  closeButtonBackground: "...",
+                  connectButtonBackground: "...",
+                  connectButtonBackgroundError: "...",
+                  connectButtonInnerBackground: "...",
+                  connectButtonText: "...",
+                  connectButtonTextError: "...",
+                  connectionIndicator: "...",
+                  downloadBottomCardBackground: "...",
+                  downloadTopCardBackground: "...",
+                  error: "...",
+                  generalBorder: "...",
+                  generalBorderDim: "...",
+                  menuItemBackground: "...",
+                  modalBackdrop: "...",
+                  modalBackground: "...",
+                  modalBorder: "...",
+                  modalText: "...",
+                  modalTextDim: "...",
+                  modalTextSecondary: "...",
+                  profileAction: "...",
+                  profileActionHover: "...",
+                  profileForeground: "...",
+                  selectedOptionBorder: "...",
+                  standby: "...",
+                },
+                fonts: {
+                  body: "...",
+                },
+                radii: {
+                  actionButton: "...",
+                  connectButton: "...",
+                  menuButton: "...",
+                  modal: "...",
+                  modalMobile: "...",
+                },
+                shadows: {
+                  connectButton: "...",
+                  dialog: "...",
+                  profileDetailsAction: "...",
+                  selectedOption: "...",
+                  selectedWallet: "...",
+                  walletLogo: "...",
+                },
+              }}
+            >
               <Header />
 
               <div style={{ position: "relative", top: "-20px" }}>

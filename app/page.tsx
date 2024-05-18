@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Phone from "../public/Phone.svg";
 import PhoneDisply from "../public/PhoneDisply.svg";
@@ -7,18 +8,40 @@ import Mission from "@/components/Mission";
 import Faqs from "@/components/Faqs/Faqs";
 import { FaqsData } from "@/components/Faqs/FaqsData";
 import RoadMapSection from "@/components/RoadMapSection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Staking from "@/components/stake";
 import Vision from "@/components/Vision";
 import ObjectiveSection from "@/components/ObjectiveSection";
 import Sliders from "@/components/Sliders";
 import WhatsApp from "@/components/WhatsApp";
+import { ConnectButton, Theme, darkTheme } from "@rainbow-me/rainbowkit";
+import { address } from "./api/address";
+import { useWriteContract } from "wagmi";
+import { ABI } from "./api/abi";
+import { color } from "framer-motion";
 
 export default function Home() {
+  const [ammount, setAmmount] = useState("");
+  const { data: hash, writeContract, error } = useWriteContract();
+  useEffect(() => {
+    if (error) {
+      alert(error);
+    }
+  }, [error]);
+
+  const sendContractTransactionToMint = (ammount: string) => {
+    writeContract({
+      address,
+      abi: ABI,
+      functionName: "mint",
+      args: [ammount],
+    });
+    return hash;
+  };
   return (
     <main className="overflow-x-hidden">
       {" "}
-      <section className="main-container mb-0 xl:flex xxl:items-start justify-start text-white">
+      <section className="main-container mb-0 xl:flex xxl:items-start justify-start text-white ">
         {/* hero text container */}
 
         <div className="flex flex-col p-5">
@@ -32,60 +55,49 @@ export default function Home() {
               <p className="m-0">Dorchester County</p>
             </h2>
           </div>
-        </div>
 
           <div className="relative text-lg inline-block max-w-full z-[4] font-poppins">
-            <p className="m-0">
-              We envision a future where every student, regardless of
-            </p>
-            <p className="m-0">
-              background, is equipped with the knowledge, skills, and
-            </p>
-            <p className="m-0 pb-10">
-              values essential for success in a dynamic world.
-            </p>
+            <div className=" max-w-lg relative text-xl leading-[150%] font-poppins text-lightsteelblue z-[1] mq450:text-base mq450:leading-[24px]">
+              <p className="m-0 leading-9 pb-10">
+                We envision a future where every student, regardless of
+                background, is equipped with the knowledge, skills, and values
+                essential for success in a dynamic world.
+              </p>
+            </div>
 
-            <div className="flex flex-row  gap-[20px] max-w-full rounded-full">
-              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,_#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 [debug_commit:1de1738] whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
-                <b className="relative uppercase font-inter text-white text-left">
-                  connect wallet
+            <div className="flex flex-row  gap-[20px] max-w-full rounded-full ">
+              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,_#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
+                <b className="relative uppercase font-inter text-white text-left shrink-0">
+                  <ConnectButton label="CONNECT WALLET" />
                 </b>
               </button>
               <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] w-[126.2px] shadow-[0px_3px_4px_rgba(154,_226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,_#9ae2ff)] box-border overflow-hidden shrink-0 flex flex-row items-start justify-start [debug_commit:1de1738] z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
-                <b className="relative text-lgi uppercase inline-block font-inter text-white text-left min-w-[50px]">
+                <b
+                  className="relative text-lgi uppercase inline-block font-inter text-white text-left min-w-[50px] pt-2"
+                  onClick={() => {
+                    sendContractTransactionToMint(ammount);
+                  }}
+                >
                   mint
                 </b>
               </button>
-                     {/* Input field and button added below */}
-                     <div>
-                  <div className="mt-4 grid w-full items-center gap-1.5">
-                    <div className="border-[3px] border-lightPink rounded-3xl bg-darkBrandColor p-4 w-full">
-                      <label
-                        htmlFor="startStaking"
-                        className="block text-lg sm:text-xl font-bold text-lightPink"
-                      >
-                        Start Staking
-                      </label>
-                      <div className="flex flex-col sm:flex-row items-center w-full mt-2 gap-2">
-                        <div className="flex flex-row w-full items-center justify-center">
-                          <label
-                            htmlFor="stakeAmount"
-                            className="text-lightPink font-bold flex items-center justify-center py-1"
-                          >
-                            Amount:
-                          </label>
-                          <input
-                            id="stakeAmount"
-                            type="number"
-                            placeholder="Enter Amount..."
-                            className="font-SourceSans3 bg-brandColor border-[3px] border-brandColor text-white rounded-3xl px-4 py-2 flex-grow hover:bg-dark active:border-b-[3px] active:border-lightPink"
-                          />
-                        </div>
+              {/* Input field and button added below */}
 
-                        
-                      </div>
-                    </div>
+              <div>
+                <div className="flex flex-col sm:flex-row items-center w-full mt-2 gap-2">
+                  <div className="flex flex-col sm:flex-row w-full items-center justify-center">
+                    <input
+                      onChange={(e) => {
+                        setAmmount(e.target.value);
+                      }}
+                      id="stakeAmount"
+                      type="number"
+                      placeholder="Enter Amount..."
+                      className="cursor-text py-[18px] px-[34px] bg-transparent shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-full bg-gradient-to-r to-[#9ae2ff] from-[rgba(154,_226,_255,_0)] overflow-hidden whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:border-skyblue-300 text-white w-full"
+                    />
                   </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -100,15 +112,71 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <WhatsApp />
       <Vision />
       <Mission />
       <Sliders />
       <ObjectiveSection />
-      <WhatsApp/>
       {/* <Staking /> */}
       {/* <RoadMapSection /> */}
       {/* <TeamSection /> */}
       <Faqs faqs={FaqsData} />
     </main>
   );
+}
+function merge(
+  arg0: {
+    colors: {
+      accentColor: string;
+      accentColorForeground: string;
+      actionButtonBorder: string;
+      actionButtonBorderMobile: string;
+      actionButtonSecondaryBackground: string;
+      closeButton: string;
+      closeButtonBackground: string;
+      connectButtonBackground: string;
+      connectButtonBackgroundError: string;
+      connectButtonInnerBackground: string;
+      connectButtonText: string;
+      connectButtonTextError: string;
+      connectionIndicator: string;
+      downloadBottomCardBackground: string;
+      downloadTopCardBackground: string;
+      error: string;
+      generalBorder: string;
+      generalBorderDim: string;
+      menuItemBackground: string;
+      modalBackdrop: string;
+      modalBackground: string;
+      modalBorder: string;
+      modalText: string;
+      modalTextDim: string;
+      modalTextSecondary: string;
+      profileAction: string;
+      profileActionHover: string;
+      profileForeground: string;
+      selectedOptionBorder: string;
+      standby: string;
+    };
+    shadows: {
+      connectButton: string;
+      dialog: string;
+      profileDetailsAction: string;
+      selectedOption: string;
+      selectedWallet: string;
+      walletLogo: string;
+    };
+    fonts: { body: string };
+    radii: {
+      actionButton: string;
+      connectButton: string;
+      menuButton: string;
+      modal: string;
+      modalMobile: string;
+    };
+    blurs: { modalOverlay: string };
+  },
+  arg1: Theme
+) {
+  throw new Error("Function not implemented.");
 }
