@@ -40,7 +40,7 @@ const Description = ({ activeImage, clickNext, clickPrev }: Props) => {
             className="w-full"
           >
             <div className="py-16 text-5xl font-extrabold font-poppins">{elem.title}</div>
-            <div className="leading-relaxed font-medium text-base tracking-wide h-60 md:h-40 font-poppins text-gray-600">
+            <div className="leading-relaxed font-medium text-base tracking-wide h-60 md:h-40 font-poppins text-gray-600 mr-15">
               {" "}
               {elem.desc}
             </div>

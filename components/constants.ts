@@ -8,7 +8,7 @@ export const images = [
     {
       id: 2,
       src: "/banner-2.png",
-      title: "Join Our Community:",
+      title: "Join Our Community",
       desc: "Step into a Vibrant Hub of Learning, Connection, and Support. Through collaboration, extracurriculars, and community outreach, we foster inclusivity, belonging, and academic excellence, nurturing lifelong friendships and shared values.",
     },
     {

@@ -76,38 +76,40 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-row  gap-[20px] max-w-full rounded-full ">
+            <div className="flex flex-col sm:flex-row gap-[20px] max-w-full rounded-full">
               <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
                 <b className="relative uppercase font-inter text-white text-left shrink-0">
                   <ConnectButton label="CONNECT WALLET" />
                 </b>
               </button>
-              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] w-[126.2px] shadow-[0px_3px_4px_rgba(154,226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,#9ae2ff)] box-border overflow-hidden shrink-0 flex flex-row items-start justify-start [debug_commit:1de1738] z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
+              <button className="flex-col max-w-full cursor-pointer py-[18px] pr-[34px] pl-[140px] sm:pl-[38px] bg-[transparent] w-[400px] shadow-[0px_3px_4px_rgba(154,226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,#9ae2ff)] box-border overflow-hidden shrink-0 flex sm:flex-row items-start justify-start z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
                 <b
-                  className="relative text-lgi uppercase inline-block font-inter text-white text-left min-w-[50px] pt-2"
+                  className="relative inline-block text-centre font-poppins min-w-[50px] pt-2 text-xl"
                   onClick={() => {
                     sendContractTransactionToMint(ammount);
                   }}
                 >
-                  mint
+                  MINT
                 </b>
               </button>
-              {/* Input field and button added below */}
 
-              <div>
-                <div className="flex flex-col sm:flex-row items-center w-full mt-2 gap-2">
-                  <div className="flex flex-col sm:flex-row w-full items-center justify-center">
-                    <input
-                      onChange={(e) => {
-                        setAmmount(e.target.value);
-                        console.log(e.target.value);
-                      }}
-                      id="stakeAmount"
-                      type="number"
-                      placeholder="Enter Amount..."
-                      className="cursor-text py-[18px] px-[34px] bg-transparent shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-full bg-gradient-to-r to-[#9ae2ff] from-[rgba(154,_226,_255,_0)] overflow-hidden whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:border-skyblue-300 text-white w-full"
-                    />
-                  </div>
+              {/* Input field and button added below */}
+            </div>
+          </div>
+          <div>
+            <div>
+              <div className="flex flex-col sm:flex-row items-center max-w-[420px] mt-2 gap-2 pt-4">
+                <div className="flex flex-col sm:flex-row w-full items-center justify-center">
+                  <input
+                    onChange={(e) => {
+                      setAmmount(e.target.value);
+                      console.log(e.target.value);
+                    }}
+                    id="stakeAmount"
+                    type="number"
+                    placeholder="Enter Amount..."
+                    className="cursor-text py-[18px] px-[34px] bg-transparent shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-full bg-gradient-to-r to-[#9ae2ff] from-[rgba(154,_226,_255,_0)] overflow-hidden whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:border-skyblue-300 text-white w-full"
+                  />
                 </div>
               </div>
             </div>

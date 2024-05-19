@@ -2,7 +2,7 @@ export const FaqsData = [
   {
     queNo: 1,
     question:
-      "How does Living Word Christian Academy (LWCA) plan to use the proceeds from NFT minting for fundraising purposes?",
+      "How does LWCA plan to use the proceeds from NFT minting for fund raising purposes?",
     answer:
       "All proceeds, minus $12,000 development and administrative fee, will be used to deposit into a trading bot service. This deposit will be used to create an endowment offering annual payout to be split between the school and NFT holders.",
   },
