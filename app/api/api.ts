@@ -5,7 +5,7 @@ import { useWriteContract } from "wagmi";
 export const sendContractTransactionToMint = (ammount: string) => {
   const { data: hash, writeContract } = useWriteContract();
   writeContract({
-    addressContract,
+    address: addressContract,
     abi: ABI,
     functionName: "mint",
     args: [ammount],
