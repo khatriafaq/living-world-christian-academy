@@ -1,27 +1,22 @@
 "use client";
 import Image from "next/image";
 import Phone from "../public/Phone.svg";
-import PhoneDisply from "../public/PhoneDisply.svg";
-import TeamSection from "@/components/TeamSection";
-import AboutUsSection from "@/components/Vision";
 import Mission from "@/components/Mission";
 import Faqs from "@/components/Faqs/Faqs";
 import { FaqsData } from "@/components/Faqs/FaqsData";
-import RoadMapSection from "@/components/RoadMapSection";
 import { useEffect, useState } from "react";
-import Staking from "@/components/stake";
 import Vision from "@/components/Vision";
 import ObjectiveSection from "@/components/ObjectiveSection";
 import Sliders from "@/components/Sliders";
 import WhatsApp from "@/components/WhatsApp";
 import { ConnectButton, Theme, darkTheme } from "@rainbow-me/rainbowkit";
-import { address } from "./api/address";
-import { useWriteContract } from "wagmi";
+import { addressContract } from "./api/address";
+import { useAccount, useWriteContract } from "wagmi";
 import { ABI } from "./api/abi";
-import { color } from "framer-motion";
 
 export default function Home() {
   const [ammount, setAmmount] = useState("");
+  const { address } = useAccount();
   const { data: hash, writeContract, error } = useWriteContract();
   useEffect(() => {
     if (error) {
@@ -30,8 +25,12 @@ export default function Home() {
   }, [error]);
 
   const sendContractTransactionToMint = (ammount: string) => {
+    if (!address) {
+      alert("please connect your wallet");
+      return;
+    }
     writeContract({
-      address,
+      address: addressContract,
       abi: ABI,
       functionName: "mint",
       args: [ammount],
@@ -59,9 +58,12 @@ export default function Home() {
           <div className="relative text-lg inline-block max-w-full z-[4] font-poppins">
             <div className=" max-w-lg relative text-xl leading-[150%] font-poppins text-lightsteelblue z-[1] mq450:text-base mq450:leading-[24px]">
               <p className="m-0 leading-9 pb-10">
-                We envision a future where every student, regardless of
-                background, is equipped with the knowledge, skills, and values
-                essential for success in a dynamic world.
+                Introducing our groundbreaking NFT Endowment Program and
+                innovative initiative aimed at bridging the realms of
+                educational excellence and spiritual empowerment. We envision a
+                future where every student, regardless of background, is
+                equipped with the knowledge, skills, and values essential for
+                success in a dynamic world.
               </p>
             </div>
 

@@ -1,14 +1,13 @@
 "use client";
 import Header from "@/components/common/Header";
 import "./globals.css";
-import type { Metadata } from "next";
 import Footer from "@/components/common/Footer";
 import { Source_Sans_3, Space_Grotesk } from "next/font/google";
 import CountdownClock from "@/components/CountdownClock";
-import Providers from "./providers";
 import "@rainbow-me/rainbowkit/styles.css";
 import {
   ConnectButton,
+  darkTheme,
   getDefaultConfig,
   RainbowKitProvider,
   Theme,
@@ -29,14 +28,14 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 const projectId = "da2ffc3f8eb0b295ff1ec21d73e08f8a";
 
 const config = getDefaultConfig({
-  appName: "Virtual X",
+  appName: "Living Word",
   projectId: projectId,
-  chains: [bsc],
+  chains: [bscTestnet, polygon],
   ssr: true,
 });
 
-const VirtualXInfo = {
-  appName: "Virtual X",
+const LivingWordInfo = {
+  appName: "Living",
 };
 
 const space = Space_Grotesk({
@@ -51,6 +50,62 @@ const btnFont = Source_Sans_3({
 });
 
 const queryClient = new QueryClient();
+
+const myCustomTheme: Theme = {
+  blurs: {
+    modalOverlay: "...",
+  },
+  colors: {
+    accentColor: "...",
+    accentColorForeground: "...",
+    actionButtonBorder: "...",
+    actionButtonBorderMobile: "...",
+    actionButtonSecondaryBackground: "...",
+    closeButton: "...",
+    closeButtonBackground: "...",
+    connectButtonBackground: "...",
+    connectButtonBackgroundError: "...",
+    connectButtonInnerBackground: "...",
+    connectButtonText: "...",
+    connectButtonTextError: "...",
+    connectionIndicator: "...",
+    downloadBottomCardBackground: "...",
+    downloadTopCardBackground: "...",
+    error: "...",
+    generalBorder: "...",
+    generalBorderDim: "...",
+    menuItemBackground: "...",
+    modalBackdrop: "...",
+    modalBackground: "#FFFFFF",
+    modalBorder: "...",
+    modalText: "...",
+    modalTextDim: "...",
+    modalTextSecondary: "...",
+    profileAction: "...",
+    profileActionHover: "...",
+    profileForeground: "...",
+    selectedOptionBorder: "...",
+    standby: "...",
+  },
+  fonts: {
+    body: "...",
+  },
+  radii: {
+    actionButton: "...",
+    connectButton: "...",
+    menuButton: "...",
+    modal: "...",
+    modalMobile: "...",
+  },
+  shadows: {
+    connectButton: "...",
+    dialog: "...",
+    profileDetailsAction: "...",
+    selectedOption: "...",
+    selectedWallet: "...",
+    walletLogo: "...",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -68,63 +123,7 @@ export default function RootLayout({
       >
         <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
-            <RainbowKitProvider
-              theme={{
-                blurs: {
-                  modalOverlay: "...",
-                },
-                colors: {
-                  accentColor: "...",
-                  accentColorForeground: "...",
-                  actionButtonBorder: "...",
-                  actionButtonBorderMobile: "...",
-                  actionButtonSecondaryBackground: "...",
-                  closeButton: "...",
-                  closeButtonBackground: "...",
-                  connectButtonBackground: "...",
-                  connectButtonBackgroundError: "...",
-                  connectButtonInnerBackground: "...",
-                  connectButtonText: "...",
-                  connectButtonTextError: "...",
-                  connectionIndicator: "...",
-                  downloadBottomCardBackground: "...",
-                  downloadTopCardBackground: "...",
-                  error: "...",
-                  generalBorder: "...",
-                  generalBorderDim: "...",
-                  menuItemBackground: "...",
-                  modalBackdrop: "...",
-                  modalBackground: "...",
-                  modalBorder: "...",
-                  modalText: "...",
-                  modalTextDim: "...",
-                  modalTextSecondary: "...",
-                  profileAction: "...",
-                  profileActionHover: "...",
-                  profileForeground: "...",
-                  selectedOptionBorder: "...",
-                  standby: "...",
-                },
-                fonts: {
-                  body: "...",
-                },
-                radii: {
-                  actionButton: "...",
-                  connectButton: "...",
-                  menuButton: "...",
-                  modal: "...",
-                  modalMobile: "...",
-                },
-                shadows: {
-                  connectButton: "...",
-                  dialog: "...",
-                  profileDetailsAction: "...",
-                  selectedOption: "...",
-                  selectedWallet: "...",
-                  walletLogo: "...",
-                },
-              }}
-            >
+            <RainbowKitProvider theme={myCustomTheme}>
               <Header />
 
               <div style={{ position: "relative", top: "-20px" }}>
