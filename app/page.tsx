@@ -13,27 +13,36 @@ import { ConnectButton, Theme, darkTheme } from "@rainbow-me/rainbowkit";
 import { addressContract } from "./api/address";
 import { useAccount, useWriteContract } from "wagmi";
 import { ABI } from "./api/abi";
+import { contractAddressUsdt } from "./api/contract.usdt";
+import { usdtABI } from "./api/abi.usdt";
 
 export default function Home() {
   const [ammount, setAmmount] = useState("");
   const { address } = useAccount();
-  const { data: hash, writeContract, error } = useWriteContract();
+  const { data: hash, writeContractAsync, error } = useWriteContract();
   useEffect(() => {
     if (error) {
       alert(error);
     }
   }, [error]);
 
-  const sendContractTransactionToMint = (ammount: string) => {
+  const sendContractTransactionToMint = async (ammount: string) => {
     if (!address) {
       alert("please connect your wallet");
       return;
     }
-    writeContract({
-      address: addressContract,
-      abi: ABI,
-      functionName: "mint",
-      args: [ammount],
+    await writeContractAsync({
+      address: contractAddressUsdt,
+      abi: usdtABI,
+      functionName: "approve",
+      args: [addressContract, (ammount as unknown as number) * 10 ** 18],
+    }).then(async () => {
+      await writeContractAsync({
+        address: addressContract,
+        abi: ABI,
+        functionName: "mint",
+        args: [ammount],
+      });
     });
     return hash;
   };
@@ -68,12 +77,12 @@ export default function Home() {
             </div>
 
             <div className="flex flex-row  gap-[20px] max-w-full rounded-full ">
-              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,_#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
+              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
                 <b className="relative uppercase font-inter text-white text-left shrink-0">
                   <ConnectButton label="CONNECT WALLET" />
                 </b>
               </button>
-              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] w-[126.2px] shadow-[0px_3px_4px_rgba(154,_226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,_#9ae2ff)] box-border overflow-hidden shrink-0 flex flex-row items-start justify-start [debug_commit:1de1738] z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
+              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] w-[126.2px] shadow-[0px_3px_4px_rgba(154,226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,#9ae2ff)] box-border overflow-hidden shrink-0 flex flex-row items-start justify-start [debug_commit:1de1738] z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
                 <b
                   className="relative text-lgi uppercase inline-block font-inter text-white text-left min-w-[50px] pt-2"
                   onClick={() => {
@@ -91,6 +100,7 @@ export default function Home() {
                     <input
                       onChange={(e) => {
                         setAmmount(e.target.value);
+                        console.log(e.target.value);
                       }}
                       id="stakeAmount"
                       type="number"
@@ -174,6 +184,7 @@ function merge(
       connectButton: string;
       menuButton: string;
       modal: string;
+
       modalMobile: string;
     };
     blurs: { modalOverlay: string };
