@@ -112,9 +112,14 @@ const Header = () => {
             <Link className="navbar__link relative" href="#objective">
               Objectives
             </Link>
-            <Link className="navbar__link relative" href="#">
+            <a
+              href="/whitepaper.pdf" // Ensure the path is correct relative to the public directory
+              className="navbar__link relative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Whitepaper
-            </Link>
+            </a>
           </nav>
         </nav>
         <div className="flex flex-auto items-start justify-end pt-0 px-0 pb-2.5">
@@ -147,9 +152,14 @@ const Header = () => {
             <Link className="navbar__link relative" href="#objective">
               Objectives
             </Link>
-            <Link className="navbar__link relative" href="#">
+            <a
+              href="/whitepaper.pdf" // Ensure the path is correct relative to the public directory
+              className="navbar__link relative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Whitepaper
-            </Link>
+            </a>
           </div>
         </div>
       )}
