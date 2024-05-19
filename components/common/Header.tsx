@@ -152,14 +152,16 @@ const Header = () => {
             <Link className="navbar__link relative" href="#objective">
               Objectives
             </Link>
-            <a
+            
+            <button>
+              <a
               href="/whitepaper.pdf" // Ensure the path is correct relative to the public directory
               className="navbar__link relative"
               target="_blank"
               rel="noopener noreferrer"
-            >
+            />
               Whitepaper
-            </a>
+            </button>
           </div>
         </div>
       )}
