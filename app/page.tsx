@@ -82,7 +82,7 @@ export default function Home() {
                   <ConnectButton label="CONNECT WALLET" />
                 </b>
               </button>
-              <button className="flex-col max-w-full cursor-pointer py-[18px] pr-[34px] pl-[140px] sm:pl-[38px] bg-[transparent] w-[400px] shadow-[0px_3px_4px_rgba(154,226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,#9ae2ff)] box-border overflow-hidden shrink-0 flex sm:flex-row items-start justify-start z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
+              <button className="flex-col max-w-full cursor-pointer py-[18px] pr-[34px] pl-[140px] sm:pl-[60px] bg-[transparent] w-[400px] sm:w-[180px] shadow-[0px_3px_4px_rgba(154,226,_255,_0.35)] rounded-t-21xl rounded-br-21xl rounded-bl-none [background:linear-gradient(0deg,_rgba(196,_241,_255,_0),_rgba(183,_236,_255,_0.31)_31%,#9ae2ff)] box-border overflow-hidden shrink-0 flex sm:flex-row items-start justify-start z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300 rounded-full">
                 <b
                   className="relative inline-block text-centre font-poppins min-w-[50px] pt-2 text-xl"
                   onClick={() => {
