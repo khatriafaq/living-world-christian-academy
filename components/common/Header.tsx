@@ -32,9 +32,7 @@ const VirtualXInfo = {
 const config = getDefaultConfig({
   appName: "Living Word",
   projectId: projectId,
-  chains: [bsc, bscTestnet],
-  //prod
-  // chains : [polygon]
+  chains: [polygon],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
 
@@ -152,14 +150,14 @@ const Header = () => {
             <Link className="navbar__link relative" href="#objective">
               Objectives
             </Link>
-            
+
             <button>
               <a
-              href="/whitepaper.pdf" // Ensure the path is correct relative to the public directory
-              className="navbar__link relative"
-              target="_blank"
-              rel="noopener noreferrer"
-            />
+                href="/whitepaper.pdf" // Ensure the path is correct relative to the public directory
+                className="navbar__link relative"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
               Whitepaper
             </button>
           </div>

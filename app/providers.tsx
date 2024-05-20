@@ -17,7 +17,7 @@ import {
   walletConnectWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 
-import { bsc, bscTestnet } from "wagmi/chains";
+import { bsc, bscTestnet, polygon } from "wagmi/chains";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Source_Sans_3, Space_Grotesk } from "next/font/google";
@@ -28,7 +28,7 @@ const projectId = "da2ffc3f8eb0b295ff1ec21d73e08f8a";
 const config = getDefaultConfig({
   appName: "Living Word",
   projectId: projectId,
-  chains: [bscTestnet],
+  chains: [polygon],
   ssr: true,
 });
 

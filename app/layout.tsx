@@ -30,7 +30,7 @@ const projectId = "da2ffc3f8eb0b295ff1ec21d73e08f8a";
 const config = getDefaultConfig({
   appName: "Living Word",
   projectId: projectId,
-  chains: [bscTestnet, polygon],
+  chains: [polygon],
   ssr: true,
 });
 
