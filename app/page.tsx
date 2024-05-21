@@ -37,12 +37,16 @@ export default function Home() {
       functionName: "approve",
       args: [addressContract, (ammount as unknown as number) * 10 ** 6],
     }).then(async () => {
-      await writeContractAsync({
-        address: addressContract,
-        abi: ABI,
-        functionName: "mint",
-        args: [ammount],
-      });
+      setTimeout(() => {
+        writeContractAsync({
+          address: addressContract,
+          abi: ABI,
+          functionName: "mint",
+          args: [ammount],
+        }).then(async (hash) => {
+          console.log("Transaction hash:", hash);
+        });
+      }, 30000);
     });
     return hash;
   };
