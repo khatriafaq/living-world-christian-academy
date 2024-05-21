@@ -81,7 +81,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-[20px] max-w-full rounded-full">
-              <button className="cursor-pointer py-[18px] pr-[34px] pl-[38.1px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
+              <button className="cursor-pointer py-[18px] pr-[34px] sm:pl-[38.1px] pl-[70px] bg-[transparent] shadow-[0px_3px_4px_rgba(154,226,_255,_0.3)] rounded-t-21xl rounded-br-none rounded-full [background:linear-gradient(178.53deg,#9ae2ff,_rgba(154,_226,_255,_0))] overflow-hidden flex flex-row items-start justify-start shrink-0 whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:box-border hover:border-[2px] hover:border-solid hover:border-skyblue-300">
                 <b className="relative uppercase font-inter text-white text-left shrink-0">
                   <ConnectButton label="CONNECT WALLET" />
                 </b>
