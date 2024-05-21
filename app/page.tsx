@@ -35,7 +35,7 @@ export default function Home() {
       address: contractAddressUsdt,
       abi: usdtABI,
       functionName: "approve",
-      args: [addressContract, (ammount as unknown as number) * 10 ** 18],
+      args: [addressContract, (ammount as unknown as number) * 10 ** 6],
     }).then(async () => {
       await writeContractAsync({
         address: addressContract,
