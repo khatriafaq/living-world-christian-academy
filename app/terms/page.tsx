@@ -20,8 +20,8 @@ const Terms = () => {
 
       <main className="mx-auto max-w-[1100px] pb-40 text-justify font-poppins">
         {/* point 1 */}
-        <div className="terms-container md:mx-8 xl:mx-0">
-          <h2 className="mt-8">1. Introduction</h2>
+        <div className="terms-container md:mx-8 xl:mx-0 ">
+          <h2 className="mt-8 text-cyan-400">1. Introduction</h2>
 
           <p>
             These Terms govern the purchase, ownership, and use of Living Word
