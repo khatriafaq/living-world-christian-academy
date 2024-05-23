@@ -111,11 +111,14 @@ export default function Home() {
                     }}
                     id="stakeAmount"
                     type="number"
-                    placeholder="Enter Amount..."
-                    className="cursor-text py-[18px] px-[34px] bg-transparent shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-full bg-gradient-to-r to-[#9ae2ff] from-[rgba(154,_226,_255,_0)] overflow-hidden whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:border-skyblue-300 text-white w-full"
+                    placeholder="Enter Number of NFT To Purchase..."
+                    className="cursor-text py-[18px] px-[34px] bg-transparent shadow-[0px_3px_4px_rgba(154,_226,_255,_0.3)] rounded-full bg-gradient-to-r to-[#9ae2ff] from-[rgba(154,_226,_255,_0)] overflow-hidden whitespace-nowrap z-[4] border-[2px] border-solid border-skyblue-500 hover:bg-skyblue-400 hover:border-skyblue-300 text-white w-full placeholder-cyan-400"
                   />
                 </div>
               </div>
+        <div className="font-poppins font-bold px-8 py-4">
+          <p>1 NFT = 25 USDT</p>
+        </div>
             </div>
           </div>
         </div>
