@@ -48,11 +48,11 @@ const Footer = () => {
   const Home = [
     {
       name: "Terms & Conditions",
-      link: "/#",
+      link: "/terms",
     },
     {
       name: "Privacy Policy",
-      link: "/#",
+      link: "/privacy",
     },
     {
       name: "FAQ",
@@ -103,7 +103,9 @@ const Footer = () => {
           </div>
 
           <div className="py-5">
-            <div className="text-skyblue-300 uppercase my-3 font-ubuntu">Company</div>
+            <div className="text-skyblue-300 uppercase my-3 font-ubuntu">
+              Company
+            </div>
             <div className="flex flex-col items-start">
               {Company.map((data, index) => (
                 <div key={index}>
@@ -121,7 +123,9 @@ const Footer = () => {
           </div>
 
           <div className="py-5">
-            <div className=" text-skyblue-300 uppercase my-3 font-ubuntu">Resources</div>
+            <div className=" text-skyblue-300 uppercase my-3 font-ubuntu">
+              Resources
+            </div>
             <div className="flex flex-col items-start">
               {Home.map((data, index) => (
                 <div key={index}>
