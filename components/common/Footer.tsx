@@ -85,10 +85,10 @@ const Footer = () => {
               <br /> Success in a Dynamic World
               <br /> with Faith and Purpose.
             </p>
-            <p className="font-normal text-white font-ubuntu" id="contact">
+            {/* <p className="font-normal text-white font-ubuntu" id="contact">
               <br /> Contact: +1(443) 232-2625
               <br /> Email: toddk@lwcadorchester.com
-            </p>
+            </p> */}
             <div className="flex mt-[48px] grayscale">
               {SocialLink.map((data, index) => (
                 <div key={index}>
