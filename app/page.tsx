@@ -11,15 +11,23 @@ import Sliders from "@/components/Sliders";
 import WhatsApp from "@/components/WhatsApp";
 import { ConnectButton, Theme, darkTheme } from "@rainbow-me/rainbowkit";
 import { addressContract } from "./api/address";
-import { useAccount, useWriteContract } from "wagmi";
+import { useAccount, useReadContract, useWriteContract } from "wagmi";
 import { ABI } from "./api/abi";
 import { contractAddressUsdt } from "./api/contract.usdt";
 import { usdtABI } from "./api/abi.usdt";
+import { mainnet, polygon } from "viem/chains";
 
 export default function Home() {
   const [ammount, setAmmount] = useState("");
   const { address } = useAccount();
   const { data: hash, writeContractAsync, error } = useWriteContract();
+  const { data: result } = useReadContract({
+    address: addressContract,
+    abi: ABI,
+    functionName: "circulatingSupply",
+  });
+  console.log(result);
+
   useEffect(() => {
     if (error) {
       alert(error);
@@ -116,9 +124,10 @@ export default function Home() {
                   />
                 </div>
               </div>
-        <div className="font-poppins font-bold px-8 py-4">
-          <p>1 NFT = 25 USDT</p>
-        </div>
+              <div className="font-poppins font-bold px-8 py-4">
+                <p className=" text-cyan-400 text-xl">{Number(result)} / 12000 NFT Sold</p>
+                <p>1 NFT = 25 USDT</p>
+              </div>
             </div>
           </div>
         </div>
