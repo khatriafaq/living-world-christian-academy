@@ -126,7 +126,7 @@ export default function Home() {
               </div>
               <div className="font-poppins font-bold px-8 py-4">
                 <p className=" text-cyan-400 text-xl">{Number(result)} / 12000 NFT Sold</p>
-                <p>1 NFT = 25 USDT</p>
+                <p>1 NFT = 25 Polygon USDT</p>
               </div>
             </div>
           </div>
